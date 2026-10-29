@@ -1,0 +1,19 @@
+[project]
+name = "decision"
+version = "0.1.0"
+description = "Runnable examples of structured decision queries with LiquidAI/d1-2B"
+readme = "README.md"
+authors = [
+    { name = "Jayanth Chennamaneni", email = "jayanthrao1795@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pillow>=13.0.0",
+    "torch>=2.15.0",
+    "torchvision>=0.29.2",
+    "transformers>=5.19",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
