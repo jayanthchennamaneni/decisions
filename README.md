@@ -23,10 +23,11 @@ uv sync
 ## Run
 
 ```bash
-uv run python -m decision.text
-uv run python -m decision.vision
+uv run python src/decision/text.py
+uv run python src/decision/vision.py
 ```
 
+These are plain scripts, not package entry points — just run the file.
 `vision.py` also writes an `invoice.png` synthetic document next to the project
 root so you can eyeball what the model was shown.
 
@@ -52,3 +53,6 @@ src/decision/
 ├── text.py     # text-only example
 └── vision.py   # image + document-reading example
 ```
+
+The examples import `model.py` as a sibling module (`from model import
+load_model`), so they run as plain scripts.

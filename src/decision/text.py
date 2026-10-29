@@ -2,10 +2,7 @@
 
 import time
 
-try:
-    from .model import load_model
-except ImportError:  # running as a plain script, not as a package module
-    from model import load_model
+from model import load_model
 
 
 def main() -> None:

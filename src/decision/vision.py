@@ -6,10 +6,7 @@ import time
 from PIL import Image, ImageDraw, ImageFont
 from transformers.image_utils import load_image
 
-try:
-    from .model import load_model
-except ImportError:  # running as a plain script, not as a package module
-    from model import load_model
+from model import load_model
 
 
 def timed(model, label, state, questions, media=None):
